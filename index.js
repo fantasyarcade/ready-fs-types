@@ -7,7 +7,7 @@ function text(t) { return TextMask | t; }
 function source(t) { return SourceMask | t; }
 
 module.exports = {
-    isDirectory(t) { return t === Directory; }
+    isDirectory(t) { return t === Directory; },
     isText(t) { return (t & TextMask) === TextMask; },
     isSource(t) { return (t & SourceMask) === SourceMask; },
     Types: {
